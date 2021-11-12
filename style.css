@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto&display=swap');
+
+:root {
+    --beige: #fff2e8;
+
+    --green: #727B44;
+    --yellow: #EDAE48;
+    --orange: #ee7b46;
+    --brown: #856745;
+    --red: #B02548;
+
+    --text-color-dark: #151515;
+    --text-color-light: #fff2e8;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+    scroll-behavior: smooth;
+    font-family: 'Lato', 'Open Sans', 'Roboto', sans-serif;
+}
+
+body {
+    background-color: var(--beige);
+}
+
+#navigation {
+    width: 100%;
+    height: 5vh;
+    background-color: var(--brown);
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+    z-index: 9999;
+}
+
+#navigation a {
+    text-decoration: none;
+    flex: 1;
+    text-align: center;
+    padding: 1rem;
+    color: var(--text-color-light);
+    transition: 0.3s;
+}
+
+#navigation a:hover {
+    background-color: var(--orange);
+    color: var(--text-color-dark);
+}
+
+.page {
+    height: 100vh;
+    width: 100%;
+}
+
+.background {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#start {
+    background-image: url(img/pumpa.jpg);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#start h1 {
+    font-size: 3rem;
+    padding: 1rem;
+    color: var(--text-color-light);
+    background-color: var(--brown);
+    box-shadow: 5px 5px 5px var(--text-color-dark);
+    border-radius: 10px;
+}
+
+#products {
+    background-color: var(--brown);
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.card {
+    width: 20vw;
+    height: 50vh;
+    border: 5px solid var(--text-color-dark);
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px var(--text-color-dark);
+
+    background-size: cover;
+    background-attachment: scroll;
+    transition: 0.5s;
+}
+
+#handwarmers{
+    background-image: url(img/handvärmare_svart_röd.jpg);
+}
+
+.card .desc {
+    position: relative;
+    background-color: rgba(15, 15, 15, 0.5);
+    transition: 0.5s;
+    height: 10%;
+    top: 90%;
+}
+
+.card:hover .desc {
+    transition: 0.5s;
+    top: 60%;
+    height: 40%;
+}
+
+.card .desc span {
+    visibility: hidden;
+}
+
+.card:hover .desc span {
+    visibility: visible;
+}
+
+#about {
+    background-image: url(img/sjö_kväll.jpg);
+}
+
+#contact {
+    background-image: url(img/sjö_dag.jpg);
+}
+
+#footer {
+    width: 100%;
+    height: 3vh;
+    background-color: var(--brown);
+}
