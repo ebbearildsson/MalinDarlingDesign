@@ -5,28 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="js/sidebar.js"></script>
     <title>MalinDarlingDesign</title>
 </head>
 <body>
-    <nav id="navigation">
-        <a href="#start">TODO:logga</a>
-        <a href="#products">Produkter</a>
-        <a href="#about">Om mig</a>
-        <a href="#contact">Kontakt</a>
-    </nav>
-    <section class="page background" id="start">
-        <h1>Välkommen till MalinDarlingDesigns!</h1>
+    <div id="sidebar">
+        <a href="#start" class="contentlink">
+            <span>Startsida</span>
+        </a>
+        <a href="#products" class="contentlink">
+            <span>Produkter</span>
+        </a>
+        <a href="#about" class="contentlink">
+            <span>Om Mig</span>
+        </a>
+        <a href="#contact" class="contentlink">
+            <span>Kontakt</span>
+        </a>
+    </div>
+    <div id="btn" onclick="setsidebar()"><a id="btntext" href="javascript:void(0)">+</a></div>
+    <section class="page" id="start">
+        <h1>Välkommen till <br> Malin Darling Designs!</h1>
     </section>
-    <section class="page background" id="products">
-        <div id="handwarmers" class="card">
-            <div class="desc">
-                <h2>Handvärmare</h2>
-                <span>Sköna handledsvärmare i ?material? med unikt mönster på</span>
-            </div>
-        </div>
-    </section>
-    <section class="page background" id="about"></section>
-    <section class="page background" id="contact"></section>
-    <footer id="footer">afoihgbbrud</footer>
 </body>
 </html>
