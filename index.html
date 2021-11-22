@@ -10,22 +10,37 @@
 </head>
 <body>
     <div id="sidebar">
-        <a href="#start" class="contentlink">
-            <span>Startsida</span>
-        </a>
-        <a href="#products" class="contentlink">
-            <span>Produkter</span>
-        </a>
-        <a href="#about" class="contentlink">
-            <span>Om Mig</span>
-        </a>
-        <a href="#contact" class="contentlink">
-            <span>Kontakt</span>
-        </a>
+        <a onclick="setsidebar()" href="#start" class="contentlink">Startsida</a>
+        <a onclick="setsidebar()" href="#products" class="contentlink">Produkter</a>
+        <a onclick="setsidebar()" href="#about" class="contentlink">Om Mig</a>
+        <a onclick="setsidebar()" href="#contact" class="contentlink">Kontakt</a>
     </div>
     <div id="btn" onclick="setsidebar()"><a id="btntext" href="javascript:void(0)">+</a></div>
     <section class="page" id="start">
         <h1>Välkommen till <br> Malin Darling Designs!</h1>
+    </section>
+    <section class="page" id="products">
+        <div class="product">
+            <p class="prodtxt">
+                <span class="prodtitle">Handvärmare</span><br>
+                Lorem ipsum dolor sit, placeat necessitatibus, aperiam unde delectus fuga enim laboriosam corporis assumenda adipisci reprehenderit quaerat natus excepturi accusamus sit.
+            </p>
+            <img src="img/handvärmare_svart_röd.jpg" alt="Bild av handvärmare" class="prodimg">
+        </div>
+        <div class="product">
+            <img src="img/mönster.jpg" alt="Ett mönster" class="prodimg">
+            <p class="prodtxt">
+                <span class="prodtitle">Mönster</span><br>
+                Lorem ipsum dolor sit, placeat necessitatibus, aperiam unde delectus fuga enim laboriosam corporis assumenda adipisci reprehenderit quaerat natus excepturi accusamus sit.
+            </p>
+        </div>
+        <div class="product">
+            <p class="prodtxt">
+                <span class="prodtitle">Pumpa</span><br>
+                Lorem ipsum dolor sit, placeat necessitatibus, aperiam unde delectus fuga enim laboriosam corporis assumenda adipisci reprehenderit quaerat natus excepturi accusamus sit.
+            </p>
+            <img src="img/pumpa.jpg" alt="Pumpa" class="prodimg">
+        </div>
     </section>
 </body>
 </html>
