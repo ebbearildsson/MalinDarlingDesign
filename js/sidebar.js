@@ -14,3 +14,14 @@ function setsidebar() {
         btntext.style.transform ="none";
     }
 }
+
+function changeImage() {
+    if (document.getElementById("changeable").src == "img/handvärmare_svart_röd.jpg") 
+    {
+        document.getElementById("changeable").src = "img/handvärmare_svart_vit.jpg";
+    }
+    else 
+    {
+        document.getElementById("changeable").src = "img/handvärmare_svart_röd.jpg";
+    }
+}

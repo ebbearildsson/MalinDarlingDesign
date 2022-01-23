@@ -129,6 +129,10 @@ p:first-child {
     font-size: x-large;
 }
 
+#changeable {
+    cursor: pointer;
+}
+
 @media (orientation: landscape) {
     .prodimg {
         max-height: 30vh;
